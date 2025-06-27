@@ -222,5 +222,5 @@ def pred():
         return render_template('resume.html',predicted_category=predicted_category,recommended_job=recommended_job,
                                phone=phone,name=name,email=email,extracted_skills=extracted_skills,extracted_education=extracted_education)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=False, host="0.0.0.0", port=5000)
